@@ -17,7 +17,7 @@ public class ScheduledService {
         this.service = service;
     }
 
-    @Scheduled(fixedDelay = Long.MAX_VALUE, initialDelay = Long.MAX_VALUE /*10000*/)
+    @Scheduled(fixedDelay = Long.MAX_VALUE, initialDelay = 10000)
     void test() {
         String sCode = "sam";
         log.info("scheduled");
